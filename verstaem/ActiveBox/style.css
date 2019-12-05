@@ -19,13 +19,11 @@ h3,
 h4,
 h5,
 h6,
-h7 {
+h7,
+p {
     margin: 0;
 }
 
-p {
-    margin: 0 0 10px;
-}
 
 /* Container
 ====================*/
@@ -108,7 +106,7 @@ p {
 .intro__title {
     margin: 0 0 41px;
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans"sans-serif;
     font-size: 65px;
     font-weight: 700;
     line-height: 1.1;
@@ -138,7 +136,7 @@ p {
     border: 0;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
-
+    text-align: center;
     color: #fff;
     font-weight: 600;
     line-height: 21px;
@@ -150,6 +148,10 @@ p {
 
 .btn--red {
     background-color: #e84545;
+}
+
+.btn--long {
+    min-width: 280px;
 }
 
 .btn--red:hover {
@@ -256,7 +258,7 @@ p {
     margin: 100px 0 70px;
 }
 
-.team__inner{
+.team__inner {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
@@ -268,7 +270,7 @@ p {
     margin-bottom: 30px;
 }
 
-.team__photo{
+.team__photo {
     margin-bottom: 20px;
     display: block;
     max-width: 100%;
@@ -281,13 +283,14 @@ p {
     font-size: 22px;
 }
 
-.team__prof{
+.team__prof {
     margin-bottom: 15px;
     color: #e84545;
     font-size: 13px;
     text-transform: uppercase;
 }
-.team__text{
+
+.team__text {
     color: #6c7279;
     font-size: 14px;
     font-weight: 400;
@@ -299,12 +302,27 @@ p {
 /* Social
 ====================*/
 
-.social{
+.social {
     display: flex;
 
 }
 
-.social__item{
+.social--footer {
+    justify-content: center;
+}
+
+.social--footer .social__item {
+    background: transparent;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
+.social__item {
     margin-right: 4px;
     display: flex;
     justify-content: center;
@@ -315,44 +333,53 @@ p {
     background-color: #fff;
     transition: background .1s linear;
 }
-.social__item:hover{
+
+.social__item:hover {
     background-color: #e8ecee;
 }
-.social__item:hover .social__icon{
+
+.social__item:hover .social__icon {
     fill: #000;
 }
-.social__icon{
+
+.social__icon {
     display: block;
     height: 18px;
     fill: #c6cacc;
     transition: fill .1s linear;
 }
 
+.social--footer .social__icon {
+    fill: #fff;
+}
+
 /* Reviews
 ============= */
-.reviews{
+.reviews {
     overflow: hidden;
     background-color: #53354a;
 }
-.reviews__item{
+
+.reviews__item {
     display: flex;
     flex-wrap: wrap;
 }
 
-.reviews__photo{
+.reviews__photo {
     width: 50%;
     height: 500px;
     position: relative;
 }
 
-.reviews__img{
+.reviews__img {
     position: absolute;
     top: 50%;
     right: 0;
     z-index: 1;
     transform: translateY(-50%);
 }
-.reviews__content{
+
+.reviews__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,7 +388,7 @@ p {
 
 }
 
-.reviews__text{
+.reviews__text {
     margin-bottom: 25px;
     font-family: 'Cardo', sans-serif;
     color: #fff;
@@ -370,10 +397,99 @@ p {
     line-height: 1.2;
 }
 
-.reviews__author{
+.reviews__author {
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
+}
+
+/* Download
+============= */
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 15px;
+    color: #2d3033;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 0.75;
+}
+
+.download__text {
+    margin-bottom: 30px;
+    color: #2d3033;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* Footer
+============= */
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    padding: 0 15px;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 18px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__address,
+.footer__text {
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.footer__address {
+    font-style: normal;
+}
+
+/* Copyright
+==================== */
+.copyright {
+    padding: 25px 0;
+    background-color: #313454;
+    ;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.copyright__text .author {
+    color: #fff;
+    font-family: 'Open Sans'sans-serif;
+    font-size: 14px;
+}
+
+.heart {
+    color: #e84545;
 }
