@@ -55,6 +55,17 @@ p {
     padding: 38px 0;
 }
 
+.header.fixed{
+    height: auto;
+    position: fixed;
+    background-color: #2f324c;
+}
+
+.header.fixed .header__inner{
+    padding: 15px 0;
+    border-bottom: 0;
+}
+
 /* Nav
 ====================*/
 
