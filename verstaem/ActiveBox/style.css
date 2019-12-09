@@ -366,6 +366,42 @@ p {
     fill: #fff;
 }
 
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 15px;
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+
+}
+.slick-dots li{
+    margin: 0 5px;
+}
+.slick-dots button{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    opacity: 0.5;
+    color: transparent;
+    cursor: pointer;
+}
+
+.slick-dots button:focus{
+    outline: none;
+}
+
+.slick-dots .slick-active button{
+    opacity: 1;
+}
 /* Reviews
 ============= */
 .reviews {
@@ -373,9 +409,19 @@ p {
     background-color: #53354a;
 }
 
+.reviews__slider{
+    height: 500px;
+    overflow: hidden;
+}
+
+.reviews__slider.slick-initialized{
+    height: auto;
+}
+
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .reviews__photo {
@@ -555,6 +601,19 @@ p {
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        text-align: right;
+        flex-direction: column;
+        position: absolute;
+        background-color: #2f324c;
+        top: 100%;
+        right: 0;
+    }
+    .nav.show{
+        display: flex;
+    }
+    .nav__link {
+        padding: 9px 15px;
     }
 
     /* Burger */
@@ -586,6 +645,7 @@ p {
         justify-content: center;
     }
     /* Reviews */
+
     .reviews__photo{
         margin: 15px 0 40px;
         width: 100%;
