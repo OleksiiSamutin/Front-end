@@ -76,6 +76,7 @@ p {
 }
 
 .nav__link {
+    display: inline-block;
     margin-left: 59px;
     opacity: 0.75;
     color: #ffffff;
@@ -91,6 +92,7 @@ p {
 
 .nav__link:hover {
     opacity: 1;
+    background-color: #fff;
 
 }
 
